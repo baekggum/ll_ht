@@ -16,10 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import blog.views
+import khj_front.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/', blog.views.login, name='login'),
     path('index/', blog.views.index, name='index'),
     path('home/', blog.views.home, name='home'),
+
+    path('base/', khj_front.views.new_base, name='base'),
 ]
