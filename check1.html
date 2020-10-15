@@ -1,0 +1,54 @@
+<!-- {% extends 'new_base.html' %}
+{% load static %}
+
+{% block header %} -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link reL = "stylesheet" href = "check1.css">
+</head>
+<!-- {% endblock %} -->
+
+<body>
+    <h2>접수 현황</h2>
+    <div style="float: right; display: inline-flex; margin: 1%;">
+        <div id="search">전화번호 검색</div>
+            <textarea></textarea>
+            <img src="searching.png" width="8%";>
+    </div> <br><br><br>   
+    <div id="line1">
+        <div> 번호 </div>
+        <div> 이름 </div>
+        <div> 전화번호 </div>
+        <div> 지점</div>
+        <div> 승인여부 </div>
+    </div>
+    <div id="line2">
+        <div>1</div>
+        <div>곰돌이</div>
+        <div>010-1234-5678</div>
+        <div>롯데마트 남원점</div>
+        <div style="color: rgb(143, 138, 138)">승인완료</div>
+    </div>
+    <div id="line3">
+        <div>2</div>
+        <div>펭수</div>
+        <div>010-1111-2222</div>
+        <div>롯데슈퍼 신당점</div>
+        <div style="color: rgb(10, 163, 10);">검토중</div>
+    </div>
+    <bottom>
+        <div id="number">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+        </div>
+    </bottom>
+    </body>
+</html>

@@ -1,0 +1,53 @@
+h2{
+    border-bottom: red 0.5rem solid;
+    color: red;
+    width: 9rem;
+    text-align: center;
+    padding-bottom: 0.3rem;
+}
+#search{
+    text-align: right; 
+    margin-right: 3%;
+    width: 100px;
+}
+textarea{
+    width: 60%;
+    height: 1.3rem;
+    margin-right: 1.5%;
+    border-radius: 0.8rem;
+}
+#line1{
+    display: inline-flex;
+    border-top: black 0.15rem solid;
+    border-bottom: red 0.15rem solid;
+    text-align: center;
+    width: 60%;
+    justify-content: space-around;
+    margin-left: 10%;
+    padding: 1%;
+}
+#line2{
+    display: inline-flex;
+    border-bottom: black 0.1rem solid;
+    text-align: center;
+    width: 60%;
+    justify-content: space-around;
+    margin-left: 10%;
+    padding: 1%;
+}
+#line3{
+    display: inline-flex;
+    border-bottom: black 0.2rem solid;
+    text-align: center;
+    width: 60%;
+    justify-content: space-around;
+    margin-left: 10%;
+    padding: 1%;
+}
+#number{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 27%;
+}
