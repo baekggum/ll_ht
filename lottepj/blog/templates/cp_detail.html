@@ -1,0 +1,140 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/cp_detail.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>lotte</title>
+</head>
+<body>
+    <!-- nav bar -->
+    <div class="myclass">
+        <img class="lotte" src="{% static 'img/롯데로고.png'%}" alt="My Image">
+        <div id = "logo_title">롯데제과</div>
+        
+        <div id = "login_id">
+            <div id = "login_name">
+                롯데제과님
+            </div> 
+           
+            <div id = "hello_name">안녕하세요:)</div>
+        </div>
+    </div>
+
+
+    <div class = "menubar">
+        <div class="item">홍보관</div>
+        <div class="item">고객의 소리</div>
+        <div class="item">접수 현황</div>
+        <div class="item">FAQ</div>
+    </div>
+
+   <div class = "menubar_bottom">
+        기타 등등
+   </div>
+
+   <!-- company detail  -->
+    <div class="flex_wrapper" style="justify-content: space-between; align-items: center; margin:2% 15%;">
+        <div class="title">고객의 소리</div>
+        <div class="flex_wrapper">
+            <div class="btn" id="red">담당자</div>
+            <div class="btn">김현지</div>
+        </div>
+     
+    </div>
+
+    <div class="main__box">
+        <div class="box" id="product" style="margin: 0% 10%;">
+            <div class="box flex_wrapper" id="red" style="margin: 2%; justify-content: space-between;">
+                <div style="padding-left: 2%;">제품 정보</div>
+                <div><img src="{% static 'img/toggle_white.png'%}" alt="toggle" width="20" height="20"></div>
+            </div>
+            <div class="flex_wrapper" style="margin: 0% 5%;  padding: 1% 5%;">
+
+                <img src="{% static 'img/말랑카우.png'%}" alt="말랑카우" width="20%" height="20%">
+ 
+                <div class="table">
+                    <div class="table_row flex_wrapper">
+                        <div>제품명</div>
+                        <div>폭신폭신 말랑카우</div>
+                    </div>
+                    <div class="table_row flex_wrapper">
+                        <div>제품번호</div>
+                        <div>LOTTE12341234</div>
+                    </div>
+                    <div class="table_row flex_wrapper">
+                        <div>반품횟수</div>
+                        <div>5회</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="customer" style="margin: 0% 10%;">
+            <div class="box flex_wrapper" id="red" style="margin: 2%; justify-content: space-between;">
+                <div style="padding-left: 2%;">고객 정보</div>
+                <div><img src="{%static 'img/toggle_white.png'%}" alt="toggle" width="20" height="20"></div>
+            </div>
+            <div class="flex_wrapper" style="margin: 0% 5%; padding: 1% 5%;">
+                <img src="{% static 'img/영수증.jpg' %}" alt="영수증" width="20%" height="20%">
+                <div class="table">
+                    <div class="table_row flex_wrapper">
+                        <div>고객명</div>
+                        <div>김이름</div>
+                    </div>
+                    <div class="table_row flex_wrapper">
+                        <div>연락처</div>
+                        <div>010-2597-1576</div>
+                    </div>
+                    <div class="table_row flex_wrapper">
+                        <div>구입처</div>
+                        <div>롯데마트 A지점</div>
+                    </div>
+                    <div class="table_row flex_wrapper">
+                        <div>승인여부</div>
+                        <div style="color: green;">상품교환</div>
+                    </div>
+                    <div class="table_row">
+                        <div>고객의 소리</div>
+                    </div>
+                    <div style="background-color:#ffffff; padding: 10% 5%;">벌레 사체가 발견되었다.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="market" style="margin: 0% 10%;">
+            <div class="box flex_wrapper" id="red" style="margin: 2%; justify-content: space-between;">
+                <div style="padding-left: 2%;">마트 정보</div>
+                <div><img src="{%static 'img/toggle_white.png'%}" alt="toggle" width="20" height="20"></div>
+            </div>
+            <div class="flex_wrapper" style="margin: 0% 5%; padding: 1% 5%;">
+                <div class="table" style="margin-left: 25%;">
+                    <div class="table_row flex_wrapper">
+                        <div>마트</div>
+                        <div>롯데마트 A지점</div>
+                    </div>
+                    <div class="table_row flex_wrapper">
+                        <div>마트 연락처</div>
+                        <div>02-123-4568</div>
+                    </div>
+                    <div class="table_row flex_wrapper">
+                        <div>교환여부</div>
+                        <div style="color: green;">상품교환</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <div class="flex_wrapper" style="margin: 0% 20%; justify-content: flex-end;">
+        <div class="btn" id="red">승인여부</div>
+        <div class="btn" id="red_border">승인</div>
+        <div class="btn" id="red_border">비승인</div>
+    </div>
+</body>
+</html>

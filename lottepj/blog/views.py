@@ -21,3 +21,6 @@ def home(request):
 def index(request):
     user = request.user
     return render(request,"index.html",{"user":user})
+
+def company(request):
+    return render(request,"cp_detail.html")
