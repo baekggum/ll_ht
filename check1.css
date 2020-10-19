@@ -16,34 +16,22 @@ textarea{
     margin-right: 1.5%;
     border-radius: 0.8rem;
 }
-#line1{
-    display: inline-flex;
-    border-top: black 0.15rem solid;
-    border-bottom: red 0.15rem solid;
-    text-align: center;
-    width: 60%;
-    justify-content: space-around;
-    margin-left: 10%;
-    padding: 1%;
+.container{        /*중앙정렬하기 위한 div */
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
-#line2{
-    display: inline-flex;
-    border-bottom: black 0.1rem solid;
-    text-align: center;
-    width: 60%;
-    justify-content: space-around;
-    margin-left: 10%;
-    padding: 1%;
+#grid_table{        /*grid 나누기 위한 div */
+    width: 1000px;
+    height: 200px;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: repeat(5, 200px);    /*열로 각 div를 200px 5번으로 나누겠다 */
 }
-#line3{
-    display: inline-flex;
-    border-bottom: black 0.2rem solid;
-    text-align: center;
-    width: 60%;
-    justify-content: space-around;
-    margin-left: 10%;
-    padding: 1%;
+#grid_table > div{
+    border: 1px solid black;
 }
+
 #number{
     text-align: center;
     display: flex;

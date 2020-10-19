@@ -1,0 +1,15 @@
+.container{        /*중앙정렬하기 위한 div */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#grid_table{        /*grid 나누기 위한 div */
+    width: 1000px;
+    height: 200px;
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: repeat(5, 200px);    /*열로 각 div를 200px 5번으로 나누겠다 */
+}
+#grid_table > div{
+    border: 1px solid black;
+}
