@@ -1,0 +1,40 @@
+{% extends 'new_base.html' %}
+{% load static %}
+
+{% block header %}
+
+<title>Document</title>
+<link rel="stylesheet" href="{% static 'css/check2.css' %}">
+{% endblock %}
+
+{% block content %}
+<h2>승인 체크</h2>
+<div id="box">
+    <img src="{% static 'img/abc.jpg' %}" style="width: 300px; padding-right: 6%;">
+    <div id="grid_table">
+        <div>고객 성함</div>
+        <div>곰돌이</div>
+        <div>제목</div>
+        <div>고객 제목</div>
+        <div>제품 정보</div>
+        <div>123456</div>
+        <div>사유</div>
+        <div>콜라에 벌레가 있어요.</div>
+        <div>전화번호</div>
+        <div>010-1234-5678</div>
+        <div>업로드 날짜</div>
+        <div>2020.10.20</div>
+    </div>
+</div>
+<b>
+    <div id="name">
+        제품명
+    </div>
+</b>
+<div id="line">
+    <div id="ok">승인</div>
+    <div id="re">검토</div>
+    <div id="dis">기각</div>
+</div>
+
+{% endblock %}

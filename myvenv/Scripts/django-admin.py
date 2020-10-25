@@ -1,4 +1,4 @@
-#!f:\likelion\ll_hackthon\ll_ht\myvenv\scripts\python.exe
+#!f:\likelion\ll_hackthon\ll_ht_1\myvenv\scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

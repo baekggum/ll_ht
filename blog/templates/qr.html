@@ -1,0 +1,59 @@
+{% extends 'new_base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/qr.css' %}">
+<style type="text/css">
+    a {
+        text-decoration: none
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="text1">
+    <p>고객의 소리</p>
+</div>
+<div class="box1">
+    <p>제품 정보</p>
+</div>
+<div class="box">
+    <div class="qr">
+        <a href="">qr코드 스캔하기</a>
+    </div>
+    <div class="item_info">
+        <p>제품명: </p>
+    </div>
+</div>
+<div class="box1">
+    <p>고객정보</p>
+</div>
+<table class="table2">
+    <tr>
+        <td>고객명 :</td>
+        <td class="input">
+            <input id='userid' type='text' />
+        </td>
+    </tr>
+    <tr>
+        <td>연락처 :</td>
+        <td class="input">
+            <input id='phonenumber' type='text' />
+        </td>
+    </tr>
+    <tr>
+        <td>구입처 :</td>
+        <td>
+            <div id="map">
+                <a href="">지도로 찾기</a>
+            </div>
+        </td>
+    </tr>
+</table>
+<p>
+    <input type="text" name="textfield" placeholder="교환/환불사유 (500자 이내)"
+        style="width:1300px; height:200px; margin-left: 50px;">
+</p>
+<div class="submit"><a href="">제출</a></div>
+</head>
+{% endblock %}

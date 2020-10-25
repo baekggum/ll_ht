@@ -1,0 +1,81 @@
+{% extends 'new_base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/accept-list.css' %}" />
+<title>롯데제과-접수 현황</title>
+{% endblock %}
+
+{% block content %}
+
+<h1>접수 현황</h1>
+<div id="square">
+
+</div>
+
+<div id="mainWrapper">
+
+    <ul>
+
+        <!-- 게시판 목록 -->
+        <li>
+
+            <ul id="ulTable">
+                <li>
+                    <ul>
+                        <li>No</li>
+                        <li>물품명</li>
+                        <li>작성일</li>
+                        <li>구매처</li>
+
+                    </ul>
+                </li>
+                <!-- 게시물이 출력될 영역 -->
+                {% for i in blog %}
+                <li>
+                    <ul>
+                        <li>1</li>
+                        <li>{{i.title}}</li>
+                        <li>{{i.pub_date}}</li>
+                        <li>롯데리아최고</li>
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li>2</li>
+                        <li>안녕하세여</li>
+                        <li>2024.07.09</li>
+                        <li>롯데슈퍼남원점</li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li>3</li>
+                        <li>롯데 샌드</li>
+                        <li>1999.12.29</li>
+                        <li>롯데마트신당점</li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <ul>
+                        <li>4</li>
+                        <li>오리온초코파이</li>
+                        <li>1980.02.30</li>
+                        <li>글쎄다..</li>
+
+                    </ul>
+                <li>
+                {% endfor %}
+            </ul>
+        </li>
+
+
+
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'new_base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/user_login.css' %}" />
+<title>Document</title>
+{% endblock %}
+
+{% block content %}
+
+
+
+<ex_text>
+    안녕하세요! 고객님.<br>
+    본인확인이 필요한 서비스 입니다.
+</ex_text>
+<div class="login_box">
+
+    <input id="input_name" type="text" value="이름"><br>
+
+    <input id="input_call" type="text" value="010">
+    <input id="input_call" type="text">
+    <input id="input_call" type="text"><br>
+
+    <input id="input_pass" type="password" placeholder="비밀번호"><br>
+
+
+
+</div>
+<submit>
+    제출
+</submit>
+<admin_login>
+    관리자 로그인
+</admin_login>
+{% endblock %}

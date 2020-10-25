@@ -1,0 +1,42 @@
+{% extends 'new_base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+<title>고객센터 메인</title>
+{% endblock %}
+
+{% block content %}
+
+<banner>
+    <img alt="로고" src="https://www.lotteconf.co.kr/Upfile/Main/Image/20170726103814912.jpg" width=100%>
+</banner>
+
+<product>
+    <div class="menu_icon">
+        <img src="{% static 'img/free-icon-gum-770933.png' %}" alt="껌" width=50%>
+    </div>
+    <div class="menu_icon">
+        <img src="{% static 'img/free-icon-chocolate-332910.png' %}" alt="초콜릿" width=50%>
+    </div>
+    <div class="menu_icon">
+        <img src="{% static 'img/free-icon-biscuit-2619485.png' %}" alt="비스킷" width=50%>
+    </div>
+    <div class="menu_icon">
+        <img src="{% static 'img/free-icon-ice-cream-3601220.png' %}" alt="아이스크림" width=50%>
+    </div>
+    <div class="menu_icon">
+        <img src="{% static 'img/free-icon-candy-2913748.png' %}" alt="캔디" width=50%>
+    </div>
+    <div class="menu_icon">
+        <img src="{% static 'img/free-icon-apple-pie-1192401.png' %}" alt="파이" width=50%>
+    </div>
+    <div class="menu_icon">
+        <img src="{% static 'img/free-icon-snack-1051948.png' %}" alt="스낵" width=50%>
+    </div>
+    <div class="menu_icon">
+        <img src="{% static 'img/free-icon-bread-2371995.png' %}" alt="빵" width=50%>
+    </div>
+</product>
+
+{% endblock %}

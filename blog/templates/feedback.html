@@ -1,0 +1,55 @@
+{% extends 'new_base.html' %}
+{% load static %}
+
+{% block header %}
+<link rel="stylesheet" href="{% static 'css/fb.css' %}">
+<style type="text/css">
+    a {
+        text-decoration: none
+    }
+</style>
+<title>Document</title>
+{% endblock %}
+
+{% block content %}
+<div class="text1">
+    <p>접수 현황</p>
+</div>
+<div>
+    <p class="text2">000님의 3개월 이내 접수현황입니다.</p>
+</div>
+<table class="table1">
+    <tr class="top">
+        <td class="top">번호</td>
+        <td>물품명</td>
+        <td>구매처</td>
+        <td>접수상태</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>빼뺴로</td>
+        <td>롯데마트 남원점</td>
+        <td style="color: green;">처리완료</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>가나초콜릿</td>
+        <td>롯데슈퍼 신당점</td>
+        <td style="color: red;">검토중</td>
+    </tr>
+</table>
+<div class="text3">
+    <p style="border-top: solid 2px black;">접수내용</p>
+</div>
+<div class="text4">
+    <p class="text5">초콜릿이 땅에 가뭄이 난 듯 갈라져있습니다..
+        이게 어떻게 된 일인지 유통기한은 그대로인데 맛도 좋지 않고 먹기에도 찝찝하네요.. </p>
+</div>
+<div style="border-bottom: solid 2px rgb(153, 153, 153);">
+    <p>2020/07/13</p>
+</div>
+<br>
+<p style="color: grey; font-size: 20px;">피드백 내용</p>
+<p style="border-bottom: solid 2px black;">제품특성상 제작과정에서 발생할수있는 결함이니 구입처에서 교환/환불 도와드리겠습니다.</P>
+<div class="re"><a href=""style="color:white;">재문의</a></div>
+{% endblock %}

@@ -1,0 +1,46 @@
+h2{
+    border-bottom: red 0.5rem solid;
+    color: red;
+    width: 9rem;
+    text-align: center;
+    padding-bottom: 0.3rem;
+    margin-left: 15%;
+}
+#search{
+    text-align: right; 
+    margin-right: 3%;
+    width: 300px;
+}
+textarea{
+    width: 60%;
+    height: 1.3rem;
+    margin-right: 1.5%;
+    border-radius: 0.8rem;
+}
+.container{        /*중앙정렬하기 위한 div */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+#grid_table{        /*grid 나누기 위한 div */
+    width: 1000px;
+    height: 180px;
+    display: grid;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    grid-template-columns: repeat(5, 200px);      /*열로 각 div를 200px 5번으로 나누겠다 */
+}
+#grid_table > div{
+    border-bottom: 1px solid black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#number{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin-left: 35%;
+    padding-top: 200px;
+}
